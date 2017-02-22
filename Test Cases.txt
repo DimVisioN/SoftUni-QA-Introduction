@@ -12,7 +12,7 @@ Dress "size" contains "L"
 
 
 ID: 2
-Title:
+Title: N/A
 Fixture:
 Steps:
 Expected result:
