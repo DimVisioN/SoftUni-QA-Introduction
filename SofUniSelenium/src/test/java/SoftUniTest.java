@@ -13,12 +13,12 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by ggeor on 11-Mar-17.
+ * Created by ggeor on 11-Mar-17.       Replase 'xxx' with valid credentials
  */
 public class SoftUniTest {
     private WebDriver driver;
-    private static final String LOGIN_USERNAME = "bqwe";
-    private static final String LOGIN_PASSWORD = "9605046960";
+    private static final String LOGIN_USERNAME = "xxx";
+    private static final String LOGIN_PASSWORD = "xxx";
     // before
     @Before
     public void setUp() {
@@ -73,8 +73,8 @@ public class SoftUniTest {
                 =this.driver
                 .findElement(By.xpath("//*[@id=\"middlePagePanel\"]/div[1]/div[1]"));
         String loggedUserNameText = loggedUserNameField.getText().trim();
-        boolean expectedUsername = loggedUserNameText.endsWith("Georgi Georgiev");
-        Assert.assertTrue("User Name should end with" + "Georgi Georgiev", expectedUsername);
+        boolean expectedUsername = loggedUserNameText.endsWith("x x");
+        Assert.assertTrue("User Name should end with" + "x x", expectedUsername);
     }
 
     @Test
@@ -85,7 +85,7 @@ public class SoftUniTest {
                 =this.driver
                 .findElement(By.xpath("//*[@id=\"middlePagePanel\"]/div[1]/div[2]"));
 
-        String expectedEmail = "bqwe@abv.bg";
+        String expectedEmail = "x@abv.bg";
         Assert.assertEquals("Email should be: " + "(" + expectedEmail + ")",
                 "(" + expectedEmail + ")", loggedUserEmail
                         .getText()
