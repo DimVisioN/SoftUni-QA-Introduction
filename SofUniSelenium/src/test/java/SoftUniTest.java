@@ -73,8 +73,8 @@ public class SoftUniTest {
                 =this.driver
                 .findElement(By.xpath("//*[@id=\"middlePagePanel\"]/div[1]/div[1]"));
         String loggedUserNameText = loggedUserNameField.getText().trim();
-        boolean expectedUsername = loggedUserNameText.endsWith("x x");
-        Assert.assertTrue("User Name should end with" + "x x", expectedUsername);
+        boolean expectedUsername = loggedUserNameText.endsWith("xxx xxx");
+        Assert.assertTrue("User Name should end with" + "xxx xxx", expectedUsername);
     }
 
     @Test
@@ -85,7 +85,7 @@ public class SoftUniTest {
                 =this.driver
                 .findElement(By.xpath("//*[@id=\"middlePagePanel\"]/div[1]/div[2]"));
 
-        String expectedEmail = "x@abv.bg";
+        String expectedEmail = "xxx@abv.bg";
         Assert.assertEquals("Email should be: " + "(" + expectedEmail + ")",
                 "(" + expectedEmail + ")", loggedUserEmail
                         .getText()
