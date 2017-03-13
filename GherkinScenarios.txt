@@ -1,0 +1,16 @@
+@id1
+Scenario: User is able to filter clothes by size
+Given I open the website at {url}
+When I hover over 'Clothes' tab
+And I click on 'Pants'
+And I check 'L' size-checkbox
+And I select random 'Pants'
+Then 'Pants' 'Size' results should contain 'L'
+
+@id2
+Scenario: User should be able to see his e-mail adress in his profile
+Given I open the website at {url}
+And i log in with {credentials}
+When I click on my Profile icon
+And I click on 'Profile'
+Then the e-mail I registered with should be displayed
