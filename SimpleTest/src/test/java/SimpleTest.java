@@ -14,7 +14,7 @@ public class SimpleTest {
     @Test
     public void whatToTest_whatConditions_expectedResult(){
         String simpleString = "object";
-        Assert.assertArrayEquals("Message", "object", simpleString;
+        Assert.assertEquals("Expected word - " + simpleString, "object", simpleString);
     }
     @After
     public void tearDown(){
