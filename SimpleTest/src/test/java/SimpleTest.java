@@ -9,7 +9,7 @@ import org.junit.Test;
 public class SimpleTest {
     @Test
     public void whatToTest_whatConditions_expectedResult(){
-        //String simpleString = "object";
-        //Assert.assertEquals("Expected word - " + simpleString, "object", simpleString);
+        String simpleString = "object";
+        Assert.assertEquals("Expected word - " + simpleString, "object", simpleString);
     }
 }
