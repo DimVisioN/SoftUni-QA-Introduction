@@ -1,0 +1,22 @@
+ID: 1
+Title: User is able to dresses by size
+Fixture: N/A
+Steps:
+#1 open website at http://automationpractice.com/index.php
+#2 hover over "Dresses" tab
+#3 click on "Summer Dresses"
+#4 check "L" checkbox
+#5 select random dress and click
+Expected result:
+Dress "size" contains "L"
+
+
+ID: 2
+Title: User is able to see his e-mail in his Profile page
+Fixture: User is registered with {credentials}
+Steps:
+#1 Open the website at {url}
+#2 Log in with {credentials}
+#3 Click on the User's profile icon
+Expected result:
+The User's e-mail is visible in his Profile page
