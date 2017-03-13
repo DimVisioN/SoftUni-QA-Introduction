@@ -7,17 +7,9 @@ import org.junit.Test;
  * Created by ggeor on 13-Mar-17.
  */
 public class SimpleTest {
-    @Before
-    public void setUp(){
-
-    }
     @Test
     public void whatToTest_whatConditions_expectedResult(){
         String simpleString = "object";
         Assert.assertEquals("Expected word - " + simpleString, "object", simpleString);
-    }
-    @After
-    public void tearDown(){
-
     }
 }
