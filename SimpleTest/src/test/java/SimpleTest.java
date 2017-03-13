@@ -13,7 +13,8 @@ public class SimpleTest {
     }
     @Test
     public void whatToTest_whatConditions_expectedResult(){
-        Assert.fail();
+        String simpleString = "object";
+        Assert.assertArrayEquals("Message", "object", simpleString;
     }
     @After
     public void tearDown(){
