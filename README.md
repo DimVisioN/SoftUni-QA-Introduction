@@ -1,2 +1,2 @@
-# SoftUni-QA-Introduction
+QA-Introduction
 Introduction to Bug Tracking Systems
